@@ -1,0 +1,10 @@
+SELECT
+  `Movie Title` AS movie_title,
+  `Release Date` AS release_date
+FROM
+  `liquid-journal-441819-d6.movie_data.movies`
+WHERE
+  `Movie Title`	LIKE 'M%' or `Movie Title` LIKE 'A%' 
+ORDER BY
+  `Release Date`
+LIMIT 30
